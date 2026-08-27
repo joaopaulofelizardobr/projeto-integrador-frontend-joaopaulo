@@ -73,9 +73,16 @@ function criarCard(item, categoria) {
     if (categoria.id === "titulos-marianos") {
 
         card.innerHTML = `
-            <div class="card-conteudo">
+            <h3>${item.nome}</h3>
 
-                <h3>${item.nome}</h3>
+            <img
+                src="${item.imagem}"
+                alt="${item.nome}"
+                class="imagem-santo"
+                onerror="this.src='assets/images/santo-generico.jpg';"
+            >
+
+            <div class="card-conteudo">
 
                 <p>
                     ${item.descricao || ""}
@@ -99,29 +106,29 @@ function criarCard(item, categoria) {
     } else {
 
         card.innerHTML = `
-    <h3>${item.nome}</h3>
+            <h3>${item.nome}</h3>
 
-    <img
-        src="${item.imagem}"
-        alt="${item.nome}"
-        class="imagem-santo"
-        onerror="this.src='assets/images/santo-generico.jpg';"
-    >
+            <img
+                src="${item.imagem}"
+                alt="${item.nome}"
+                class="imagem-santo"
+                onerror="this.src='assets/images/santo-generico.jpg';"
+            >
 
-    <div class="card-conteudo">
+            <div class="card-conteudo">
 
-        ${
-            item.dataCelebracao
-                ? `<p><strong>Celebrado em:</strong> ${item.dataCelebracao}</p>`
-                : ""
-        }
+                ${
+                    item.dataCelebracao
+                        ? `<p><strong>Celebrado em:</strong> ${item.dataCelebracao}</p>`
+                        : ""
+                }
 
-        <p>
-            ${item.descricao || ""}
-        </p>
+                <p>
+                    ${item.descricao || ""}
+                </p>
 
-    </div>
-`;
+            </div>
+        `;
     }
 
     return card;
