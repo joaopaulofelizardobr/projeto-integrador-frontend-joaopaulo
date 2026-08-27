@@ -1,136 +1,371 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santo do Dia</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Catholic Point</title>
+
 </head>
 
+
 <body>
-    <h1>Santo do Dia</h1>
 
-    <p>
-        Um espaço dedicado a apresentar diariamente a história e a vida dos santos
-        celebrados pela Igreja Católica.
-    </p>
 
-    <ul>
-        <li>História e vida dos santos</li>
-        <li>Data de celebração de cada santo</li>
-        <li>Reflexões e ensinamentos dos santos</li>
-    </ul>
+    <!-- =================================================
+         CABEÇALHO
+         ================================================= -->
 
-    <section>
-        <h2>São Francisco de Assis</h2>
+    <header>
 
-        <img 
-            src="assets/images/sao-francisco.jpg" 
-            alt="Imagem de São Francisco de Assis"
-        >
+        <h1>Catholic Point</h1>
 
         <p>
-            Conhecido por sua vida de simplicidade, humildade e amor à criação.
+            Conheça a vida dos santos e as devoções marianas
+            da Igreja Católica.
         </p>
+
+        <a href="santo-do-dia.html">
+            Ver o Santo do Dia
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTEÚDO PRINCIPAL
+         ================================================= -->
+
+    <main>
+
+        <!-- =================================================
+             SANTOS DOS PRIMEIROS SÉCULOS
+             ================================================= -->
+
+        <section id="primeiros-seculos">
+
+            <h2>
+                Santos dos Primeiros Séculos
+            </h2>
+
+            <div
+                id="lista-primeiros-seculos"
+                class="lista-santos"
+            ></div>
+
+            <button
+                id="ver-mais-primeiros-seculos"
+                onclick="adicionarMais('primeiros-seculos')"
+            >
+                Ver mais
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SANTOS MEDIEVAIS
+             ================================================= -->
+
+        <section id="medievais">
+
+            <h2>
+                Santos Medievais
+            </h2>
+
+            <div
+                id="lista-medievais"
+                class="lista-santos"
+            ></div>
+
+            <button
+                id="ver-mais-medievais"
+                onclick="adicionarMais('medievais')"
+            >
+                Ver mais
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SANTOS MODERNOS
+             ================================================= -->
+
+        <section id="modernos">
+
+            <h2>
+                Santos Modernos
+            </h2>
+
+            <div
+                id="lista-modernos"
+                class="lista-santos"
+            ></div>
+
+            <button
+                id="ver-mais-modernos"
+                onclick="adicionarMais('modernos')"
+            >
+                Ver mais
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SANTOS CONTEMPORÂNEOS
+             ================================================= -->
+
+        <section id="contemporaneos">
+
+            <h2>
+                Santos Contemporâneos
+            </h2>
+
+            <div
+                id="lista-contemporaneos"
+                class="lista-santos"
+            ></div>
+
+            <button
+                id="ver-mais-contemporaneos"
+                onclick="adicionarMais('contemporaneos')"
+            >
+                Ver mais
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TÍTULOS MARIANOS
+             ================================================= -->
+
+        <section id="titulos-marianos">
+
+            <h2>
+                Títulos Marianos
+            </h2>
+
+            <div
+                id="lista-titulos-marianos"
+                class="lista-santos"
+            ></div>
+
+            <button
+                id="ver-mais-titulos-marianos"
+                onclick="adicionarMais('titulos-marianos')"
+            >
+                Ver mais
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CALENDÁRIO LITÚRGICO
+             ================================================= -->
+
+        <section id="calendario-liturgico">
+
+            <h2>
+                Calendário Litúrgico
+            </h2>
+
+            <p>
+                Confira os principais tempos litúrgicos da Igreja Católica
+                ao longo do ano.
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Tempo Litúrgico</th>
+                        <th>Período Aproximado</th>
+                        <th>Cor Litúrgica</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Advento</td>
+                        <td>Final de novembro a 24 de dezembro</td>
+                        <td>Roxo</td>
+                    </tr>
+                    <tr>
+                        <td>Natal</td>
+                        <td>25 de dezembro ao Batismo do Senhor</td>
+                        <td>Branco</td>
+                    </tr>
+                    <tr>
+                        <td>Quaresma</td>
+                        <td>Quarta-feira de Cinzas até a Semana Santa</td>
+                        <td>Roxo</td>
+                    </tr>
+                    <tr>
+                        <td>Páscoa</td>
+                        <td>Domingo de Páscoa até Pentecostes</td>
+                        <td>Branco</td>
+                    </tr>
+                    <tr>
+                        <td>Tempo Comum</td>
+                        <td>Restante do ano litúrgico</td>
+                        <td>Verde</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+    
+
+        </section>
+
+        <p>Para mais informacoes oficiais, visite o <a href="https://www.vaticannews.va/en.html" target="_blank" rel="noopener noreferrer">site oficial do Vaticano</a>.</p>
+
+
+
+        <!-- =================================================
+             FORMULÁRIO - SUGERIR UM SANTO
+             ================================================= -->
+
+        <section id="sugerir-santo">
+
+            <h2>
+                Sugira um Santo
+            </h2>
+
+            <p>
+                Não encontrou o santo que procurava? Envie uma sugestão
+                para que possamos incluí-lo em nosso acervo.
+            </p>
+
+            <form id="form-sugestao">
+
+                <fieldset>
+
+                    <legend>
+                        Dados da sugestão
+                    </legend>
+
+                    <label for="nome-santo-sugerido">
+                        Nome do santo:
+                    </label>
+                    <input
+                        type="text"
+                        id="nome-santo-sugerido"
+                        name="nome-santo-sugerido"
+                        pattern="[A-Za-zÀ-ÿ\s]+"
+                        title="Digite apenas letras e espaços"
+                        required
+                    >
+
+                    <label for="email-solicitante">
+                        Seu e-mail:
+                    </label>
+                    <input
+                        type="email"
+                        id="email-solicitante"
+                        name="email-solicitante"
+                        required
+                    >
+
+                    <label for="periodo-sugerido">
+                        Período histórico:
+                    </label>
+                    <select
+                        id="periodo-sugerido"
+                        name="periodo-sugerido"
+                        required
+                    >
+                        <option value="">Selecione uma opção</option>
+                        <option value="primeiros-seculos">Primeiros Séculos</option>
+                        <option value="medievais">Medieval</option>
+                        <option value="modernos">Moderno</option>
+                        <option value="contemporaneos">Contemporâneo</option>
+                    </select>
+
+                    <label for="data-celebracao-sugerida">
+                        Data de celebração (se souber):
+                    </label>
+                    <input
+                        type="date"
+                        id="data-celebracao-sugerida"
+                        name="data-celebracao-sugerida"
+                        min="1900-01-01"
+                        max="2026-12-31"
+                    >
+
+                    <label for="motivo-sugestao">
+                        Por que esse santo deveria ser incluído?
+                    </label>
+                    <textarea
+                        id="motivo-sugestao"
+                        name="motivo-sugestao"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                </fieldset>
+
+                <button type="submit">
+                    Enviar sugestão
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================================
+         RODAPÉ
+         ================================================= -->
+
+    <footer>
 
         <p>
-            Data de celebração: 4 de outubro
+            &copy; 2026 Catholic Point. Projeto acadêmico.
         </p>
 
-        <p>
-            Classificação litúrgica: Memória obrigatória
-        </p>
-    </section>
+    </footer>
 
-    <section>
-        <h2>Santa Teresinha do Menino Jesus</h2>
 
-        <img 
-            src="assets/images/santa-terezinha.jpg" 
-            alt="Imagem de Santa Teresinha do Menino Jesus"
-        >
 
-        <p>
-            Conhecida pela espiritualidade da Pequena Via e por sua confiança no amor de Deus.
-        </p>
+    <!-- =================================================
+         JAVASCRIPT
+         ================================================= -->
 
-        <p>
-            Data de celebração: 1 de outubro
-        </p>
+    <!-- PRIMEIRO: banco de dados -->
 
-        <p>
-            Classificação litúrgica: Memória obrigatória
-        </p>
-    </section>
+    <script src="./js/santos.js"></script>
 
-    <section>
-        <h2>Calendário Litúrgico</h2>
+    <script>
+        console.log("santos.js carregado");
 
-        <table>
-            <tr>
-                <th>Tempo Litúrgico</th>
-                <th>Descrição</th>
-            </tr>
+        console.log("Primeiros séculos:", santosPrimeirosSeculos);
+        console.log("Medievais:", santosMedievais);
+        console.log("Modernos:", santosModernos);
+        console.log("Contemporâneos:", santosContemporaneos);
+        console.log("Títulos marianos:", titulosMarianos);
+    </script>
 
-            <tr>
-                <td>Advento</td>
-                <td>
-                    Tempo de preparação e expectativa para o Natal do Senhor.
-                </td>
-            </tr>
+    <script src="./js/script.js"></script>
 
-            <tr>
-                <td>Tempo do Natal</td>
-                <td>
-                    Celebra o nascimento e a manifestação de Jesus Cristo.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Tempo Comum I</td>
-                <td>
-                    Período entre o Tempo do Natal e o início da Quaresma.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Quaresma</td>
-                <td>
-                    Tempo de preparação para a Páscoa, marcado pela oração,
-                    penitência e conversão.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Tríduo Pascal</td>
-                <td>
-                    Compreende a celebração da Paixão, Morte e Ressurreição de Cristo,
-                    tendo seu ápice na Vigília Pascal.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Tempo Pascal</td>
-                <td>
-                    Período de cinquenta dias que vai do Domingo da Ressurreição
-                    até Pentecostes.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Tempo Comum II</td>
-                <td>
-                    Período que segue o Tempo Pascal até o início de um novo Ano Litúrgico.
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <a 
-        href="https://www.vaticannews.va/pt/santo-do-dia.html" 
-        target="_blank" 
-        rel="noopener noreferrer"
-    >
-        Consulte o Santo do Dia no Vatican News
-    </a>
 </body>
 </html>
