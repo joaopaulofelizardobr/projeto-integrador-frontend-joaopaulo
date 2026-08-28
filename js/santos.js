@@ -1772,7 +1772,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Tradição da Igreja",
-        descricao: "Título pelo qual a Virgem Maria é venerada na tradição cristã."
+        descricao: "Título pelo qual a Virgem Maria é venerada na tradição cristã.",
+        imagem: "assets/images/santa-maria.jpg"
     },
 
     {
@@ -1780,7 +1781,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "01/01",
         origem: "Dogma e tradição da Igreja",
-        descricao: "Título que reconhece Maria como Mãe de Deus, em razão da verdadeira humanidade e divindade de Jesus Cristo."
+        descricao: "Título que reconhece Maria como Mãe de Deus, em razão da verdadeira humanidade e divindade de Jesus Cristo.",
+        imagem: "assets/images/santa-mae-de-deus.jpg"
     },
 
     {
@@ -1788,7 +1790,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Igreja Católica",
-        descricao: "Título que expressa a maternidade espiritual de Maria em relação à Igreja."
+        descricao: "Título que expressa a maternidade espiritual de Maria em relação à Igreja.",
+        imagem: "assets/images/mae-da-igreja.jpg"
     },
 
     {
@@ -1796,7 +1799,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "08/12",
         origem: "Dogma católico",
-        descricao: "Título relacionado à doutrina segundo a qual Maria foi preservada do pecado original desde o primeiro instante de sua concepção."
+        descricao: "Título relacionado à doutrina segundo a qual Maria foi preservada do pecado original desde o primeiro instante de sua concepção.",
+        imagem: "assets/images/imaculada-conceicao.jpg"
     },
 
     {
@@ -1804,7 +1808,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "15/08",
         origem: "Dogma católico",
-        descricao: "Título relacionado à Assunção da Virgem Maria ao céu."
+        descricao: "Título relacionado à Assunção da Virgem Maria ao céu.",
+        imagem: "assets/images/nossa-senhora-da-assuncao.jpg"
     },
 
     {
@@ -1812,7 +1817,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Tradição cristã",
-        descricao: "Título latino que significa Rainha do Céu."
+        descricao: "Título latino que significa Rainha do Céu.",
+        imagem: "assets/images/regina-caeli.jpg"
     },
 
     {
@@ -1820,7 +1826,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Tradição cristã",
-        descricao: "Título latino que significa Estrela do Mar, associado à esperança e à proteção de Maria."
+        descricao: "Título latino que significa Estrela do Mar, associado à esperança e à proteção de Maria.",
+        imagem: "assets/images/stella-maris.jpg"
     },
 
     {
@@ -1828,7 +1835,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "13/05",
         origem: "Fátima, Portugal",
-        descricao: "Título associado às aparições marianas ocorridas em Fátima."
+        descricao: "Título associado às aparições marianas ocorridas em Fátima.",
+        imagem: "assets/images/nossa-senhora-de-fatima.jpg"
     },
 
     {
@@ -1836,7 +1844,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "11/02",
         origem: "Lourdes, França",
-        descricao: "Título associado às aparições marianas ocorridas em Lourdes."
+        descricao: "Título associado às aparições marianas ocorridas em Lourdes.",
+        imagem: "assets/images/nossa-senhora-de-lourdes.jpg"
     },
 
     {
@@ -1844,7 +1853,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "12/12",
         origem: "Guadalupe, México",
-        descricao: "Título associado à tradição das aparições da Virgem Maria a São Juan Diego."
+        descricao: "Título associado à tradição das aparições da Virgem Maria a São Juan Diego.",
+        imagem: "assets/images/nossa-senhora-de-guadalupe.jpg"
     },
 
     {
@@ -1852,7 +1862,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "19/09",
         origem: "La Salette, França",
-        descricao: "Título associado à aparição mariana de La Salette."
+        descricao: "Título associado à aparição mariana de La Salette.",
+        imagem: "assets/images/nossa-senhora-de-la-salette.jpg"
     },
 
     {
@@ -1860,7 +1871,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "12/10",
         origem: "Brasil",
-        descricao: "Título pelo qual a Virgem Maria é venerada como Padroeira do Brasil."
+        descricao: "Título pelo qual a Virgem Maria é venerada como Padroeira do Brasil.",
+        imagem: "assets/images/nossa-senhora-aparecida.jpg"
     },
 
     {
@@ -1868,7 +1880,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "16/07",
         origem: "Tradição Carmelita",
-        descricao: "Título mariano associado à tradição da Ordem do Carmo."
+        descricao: "Título mariano associado à tradição da Ordem do Carmo.",
+        imagem: "assets/images/nossa-senhora-do-carmo.jpg"
     },
 
     {
@@ -1876,7 +1889,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "07/10",
         origem: "Tradição da Igreja",
-        descricao: "Título associado à devoção e à oração do Santo Rosário."
+        descricao: "Título associado à devoção e à oração do Santo Rosário.",
+        imagem: "assets/images/nossa-senhora-do-rosario.jpg"
     },
 
     {
@@ -1884,7 +1898,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "15/09",
         origem: "Tradição cristã",
-        descricao: "Título que contempla a participação de Maria nos sofrimentos de Cristo."
+        descricao: "Título que contempla a participação de Maria nos sofrimentos de Cristo.",
+        imagem: "assets/images/nossa-senhora-das-dores.jpg"
     },
 
     {
@@ -1892,7 +1907,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "27/11",
         origem: "Paris, França",
-        descricao: "Título associado à devoção da Medalha Milagrosa."
+        descricao: "Título associado à devoção da Medalha Milagrosa.",
+        imagem: "assets/images/nossa-senhora-das-gracas.jpg"
     },
 
     {
@@ -1900,7 +1916,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "27/06",
         origem: "Tradição cristã",
-        descricao: "Título associado ao famoso ícone mariano do Perpétuo Socorro."
+        descricao: "Título associado ao famoso ícone mariano do Perpétuo Socorro.",
+        imagem: "assets/images/nossa-senhora-do-perpetuo-socorro.jpg"
     },
 
     {
@@ -1908,7 +1925,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "24/05",
         origem: "Tradição da Igreja",
-        descricao: "Título que invoca Maria como auxílio e proteção dos cristãos."
+        descricao: "Título que invoca Maria como auxílio e proteção dos cristãos.",
+        imagem: "assets/images/nossa-senhora-auxiliadora.jpg"
     },
 
     {
@@ -1916,7 +1934,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: "22/08",
         origem: "Tradição da Igreja",
-        descricao: "Título que reconhece Maria como Rainha, celebrado liturgicamente oito dias após a Assunção."
+        descricao: "Título que reconhece Maria como Rainha, celebrado liturgicamente oito dias após a Assunção.",
+        imagem: "assets/images/nossa-senhora-rainha.jpg"
     },
 
     {
@@ -1924,7 +1943,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Tradição da Igreja",
-        descricao: "Título que invoca Maria como Rainha da Paz."
+        descricao: "Título que invoca Maria como Rainha da Paz.",
+        imagem: "assets/images/nossa-senhora-rainha-da-paz.jpg"
     },
 
     {
@@ -1932,7 +1952,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Teologia e tradição da Igreja",
-        descricao: "Título que expressa a maternidade espiritual de Maria em relação aos fiéis."
+        descricao: "Título que expressa a maternidade espiritual de Maria em relação aos fiéis.",
+        imagem: "assets/images/mae-dos-fieis.jpg"
     },
 
     {
@@ -1940,7 +1961,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Tradição e teologia católica",
-        descricao: "Título que expressa a maternidade espiritual de Maria para os cristãos."
+        descricao: "Título que expressa a maternidade espiritual de Maria para os cristãos.",
+        imagem: "assets/images/mae-espiritual.jpg"
     },
 
     {
@@ -1948,7 +1970,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Tradição da Igreja",
-        descricao: "Título mariano associado à misericórdia e à intercessão materna de Maria."
+        descricao: "Título mariano associado à misericórdia e à intercessão materna de Maria.",
+        imagem: "assets/images/mae-da-misericordia.jpg"
     },
 
     {
@@ -1956,7 +1979,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Igreja Católica",
-        descricao: "Título mariano que expressa Maria como sinal de esperança para os fiéis."
+        descricao: "Título mariano que expressa Maria como sinal de esperança para os fiéis.",
+        imagem: "assets/images/mae-da-esperanca.jpg"
     },
 
     {
@@ -1964,7 +1988,8 @@ const titulosMarianos = [
         periodo: "titulos-marianos",
         dataCelebracao: null,
         origem: "Ladainha de Loreto",
-        descricao: "Invocação mariana acrescentada à Ladainha de Loreto pela Santa Sé."
+        descricao: "Invocação mariana acrescentada à Ladainha de Loreto pela Santa Sé.",
+        imagem: "assets/images/consoladora-dos-migrantes.jpg"
     }
 
 ];
