@@ -1,77 +1,64 @@
-// =====================================================
-// SANTO DO DIA
-// =====================================================
-
-// Junta todos os santos cadastrados no santos.js
+// Junta todos os santos em um único array
 const todosOsSantos = [
     ...santosPrimeirosSeculos,
     ...santosMedievais,
     ...santosModernos,
-    ...santosContemporaneos
+    ...santosContemporaneos,
+    ...titulosMarianos
 ];
 
-// -----------------------------------------------------
-// CONFIGURAÇÃO
-// -----------------------------------------------------
-
-const nomeElemento = document.getElementById("nome-santo");
-const imagemElemento = document.getElementById("imagem-santo");
-const dataElemento = document.getElementById("data-santo");
-const descricaoElemento = document.getElementById("descricao-santo");
-
-// -----------------------------------------------------
-// DATA ATUAL
-// -----------------------------------------------------
+const container = document.getElementById("santos-do-dia");
 
 const hoje = new Date();
-
 const dia = String(hoje.getDate()).padStart(2, "0");
 const mes = String(hoje.getMonth() + 1).padStart(2, "0");
+const dataHoje = dia + "/" + mes;
 
-const dataHoje = `${dia}/${mes}`;
+// Procura TODOS os santos que celebram na data de hoje
+const resultados = [];
 
-// -----------------------------------------------------
-// PROCURA O SANTO DO DIA
-// -----------------------------------------------------
+for (let i = 0; i < todosOsSantos.length; i++) {
+    if (todosOsSantos[i].dataCelebracao === dataHoje) {
+        resultados.push(todosOsSantos[i]);
+    }
+}
 
-const santoDoDia = todosOsSantos.find(
-    santo => santo.dataCelebracao === dataHoje
-);
+// Limpa o container antes de inserir o conteúdo
+container.innerHTML = "";
 
-// -----------------------------------------------------
-// MOSTRA O SANTO
-// -----------------------------------------------------
+if (resultados.length === 0) {
+    const titulo = document.createElement("h3");
+    titulo.textContent = "Santo do Dia";
 
-if (santoDoDia) {
+    const mensagem = document.createElement("p");
+    mensagem.textContent = "Não há santo cadastrado para esta data.";
 
-    nomeElemento.textContent = santoDoDia.nome;
-
-    dataElemento.textContent =
-        `Celebrado em ${santoDoDia.dataCelebracao}`;
-
-    descricaoElemento.textContent =
-        santoDoDia.descricao;
-
-    imagemElemento.src =
-        santoDoDia.imagem;
-
-    imagemElemento.alt =
-        santoDoDia.nome;
-
+    container.appendChild(titulo);
+    container.appendChild(mensagem);
 } else {
+    for (let i = 0; i < resultados.length; i++) {
+        const santo = resultados[i];
 
-    nomeElemento.textContent =
-        "Santo do Dia";
+        const card = document.createElement("div");
 
-    dataElemento.textContent =
-        "Não há santo cadastrado para esta data.";
+        const nome = document.createElement("h3");
+        nome.textContent = santo.nome;
 
-    descricaoElemento.textContent =
-        "";
+        const imagem = document.createElement("img");
+        imagem.src = santo.imagem;
+        imagem.alt = santo.nome;
 
-    imagemElemento.src =
-        "assets/images/santo-generico.jpg";
+        const data = document.createElement("p");
+        data.textContent = "Celebrado em " + santo.dataCelebracao;
 
-    imagemElemento.alt =
-        "Santo do Dia";
+        const descricao = document.createElement("p");
+        descricao.textContent = santo.descricao;
+
+        card.appendChild(nome);
+        card.appendChild(imagem);
+        card.appendChild(data);
+        card.appendChild(descricao);
+
+        container.appendChild(card);
+    }
 }
