@@ -1,0 +1,402 @@
+/* ===== RESET E BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #f5efe0;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 4px solid #c9a227;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #a8841b;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    margin-bottom: 1rem;
+}
+
+header video {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #c9a227;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+header a {
+    display: inline-block;
+    background-color: #c9a227;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+header a:hover {
+    background-color: #a8841b;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* ===== SEÇÕES DOS SANTOS (separação visual) ===== */
+main > section {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd0;
+    border-top: 5px solid #c9a227;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+main > section:nth-child(even) {
+    background-color: #faf6ec;
+}
+
+main > section h2 {
+    color: #a8841b;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #c9a227;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+/* ===== CONTAINER DE CADA CATEGORIA (onde os cards ficam) ===== */
+main > section > div[id^="lista-"] {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ===== CARD DE CADA SANTO ===== */
+.card-santo {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd0;
+    border-left: 5px solid #c9a227;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-santo h3 {
+    color: #a8841b;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.card-santo .imagem-santo {
+    display: block;
+    max-width: 220px;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #e0dcd0;
+    margin-bottom: 0.8rem;
+}
+
+.card-conteudo p {
+    margin-bottom: 0.5rem;
+}
+
+.card-conteudo strong {
+    color: #6b5a2e;
+}
+
+/* ===== BOTÃO "VER MAIS" ===== */
+button[id^="ver-mais-"] {
+    display: block;
+    margin: 1rem auto 0;
+    background-color: #c9a227;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[id^="ver-mais-"]:hover {
+    background-color: #a8841b;
+}
+
+/* ===== TABELA (calendário litúrgico) ===== */
+.tabela-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    border: 1px solid #e0dcd0;
+    padding: 0.7rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #c9a227;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #faf6ec;
+}
+
+/* ===== LINK PARA O SITE DO VATICANO ===== */
+.link-vaticano {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: #6b5a2e;
+}
+
+.link-vaticano a {
+    color: #a8841b;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.link-vaticano a:hover {
+    color: #c9a227;
+    text-decoration: none;
+}
+
+/* ===== FORMULÁRIO ===== */
+fieldset {
+    border: 2px solid #c9a227;
+    border-radius: 6px;
+    padding: 1.2rem;
+}
+
+legend {
+    color: #a8841b;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+form label {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+form button,
+form input[type="submit"] {
+    margin-top: 1.2rem;
+    background-color: #c9a227;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #a8841b;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #4a4a4a;
+    color: #f5efe0;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ===== PÁGINA SANTO DO DIA (mesmo estilo do site) ===== */
+body > h1 {
+    background-color: #f5efe0;
+    color: #a8841b;
+    text-align: center;
+    padding: 2rem 1.5rem 0.5rem;
+    border-bottom: 4px solid #c9a227;
+    font-size: 2.5rem;
+}
+
+body > h2 {
+    background-color: #f5efe0;
+    color: #6b5a2e;
+    text-align: center;
+    padding: 0 1.5rem 1.5rem;
+    border-bottom: 4px solid #c9a227;
+    font-size: 1.4rem;
+}
+
+#santos-do-dia {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+#santos-do-dia > div {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd0;
+    border-left: 5px solid #c9a227;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#santos-do-dia h3 {
+    color: #a8841b;
+    margin-bottom: 0.6rem;
+}
+
+#santos-do-dia img {
+    max-width: 250px;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+
+body > a {
+    display: block;
+    text-align: center;
+    margin: 1.5rem auto;
+    color: #a8841b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body > a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVIDADE (tablet) ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header video {
+        width: 100%;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main > section {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main > section h2 {
+        font-size: 1.3rem;
+    }
+
+    .card-santo {
+        padding: 1rem;
+    }
+
+    .card-santo .imagem-santo {
+        max-width: 100%;
+    }
+
+    table {
+        min-width: 500px;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+}
+
+/* ===== RESPONSIVIDADE (celular pequeno) ===== */
+@media (max-width: 480px) {
+    header {
+        padding: 1.2rem 0.8rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    header a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main > section h2 {
+        font-size: 1.15rem;
+    }
+
+    .card-santo h3 {
+        font-size: 1.1rem;
+    }
+
+    button[id^="ver-mais-"] {
+        width: 100%;
+        padding: 0.6rem;
+    }
+
+    form button,
+    form input[type="submit"] {
+        width: 100%;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+
+    #santos-do-dia img,
+    .card-santo .imagem-santo {
+        max-width: 100%;
+    }
+}

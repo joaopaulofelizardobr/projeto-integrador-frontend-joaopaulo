@@ -1,197 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+ 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catholic Point</title>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-
+ 
 <body>
-
-
-    <!-- =================================================
-         CABEÇALHO
-         ================================================= -->
-
-    <header>
-
-        <h1>Catholic Point</h1>
-
+ 
+<header>
+ 
+    <h1>Catholic Point</h1>
+ 
+    <p>
+        Conheça a vida dos santos e as devoções marianas
+        da Igreja Católica.
+    </p>
+ 
+    <video controls width="600">
+        <source src="./assets/video/deus-no-cotidiano.webm" type="video/webm">
         <p>
-            Conheça a vida dos santos e as devoções marianas
-            da Igreja Católica.
+            Seu navegador não suporta o elemento de vídeo.
+            <a href="assets/videos/aula.mp4">Baixe o vídeo</a>.
         </p>
-
+    </video>
+ 
+    <p>
         <a href="santo-do-dia.html">
             Ver o Santo do Dia
         </a>
-
-    </header>
-
-
-
+    </p>
+ 
+</header>
+ 
+ 
+ 
     <!-- =================================================
          CONTEÚDO PRINCIPAL
          ================================================= -->
-
+ 
     <main>
-
+ 
+ 
         <!-- =================================================
              SANTOS DOS PRIMEIROS SÉCULOS
              ================================================= -->
-
+ 
         <section id="primeiros-seculos">
-
+ 
             <h2>
                 Santos dos Primeiros Séculos
             </h2>
-
+ 
             <div
                 id="lista-primeiros-seculos"
                 class="lista-santos"
             ></div>
-
+ 
             <button
                 id="ver-mais-primeiros-seculos"
                 onclick="adicionarMais('primeiros-seculos')"
             >
                 Ver mais
             </button>
-
+ 
         </section>
-
-
-
+ 
+ 
+ 
         <!-- =================================================
              SANTOS MEDIEVAIS
              ================================================= -->
-
+ 
         <section id="medievais">
-
+ 
             <h2>
                 Santos Medievais
             </h2>
-
+ 
             <div
                 id="lista-medievais"
                 class="lista-santos"
             ></div>
-
+ 
             <button
                 id="ver-mais-medievais"
                 onclick="adicionarMais('medievais')"
             >
                 Ver mais
             </button>
-
+ 
         </section>
-
-
-
+ 
+ 
+ 
         <!-- =================================================
              SANTOS MODERNOS
              ================================================= -->
-
+ 
         <section id="modernos">
-
+ 
             <h2>
                 Santos Modernos
             </h2>
-
+ 
             <div
                 id="lista-modernos"
                 class="lista-santos"
             ></div>
-
+ 
             <button
                 id="ver-mais-modernos"
                 onclick="adicionarMais('modernos')"
             >
                 Ver mais
             </button>
-
+ 
         </section>
-
-
-
+ 
+ 
+ 
         <!-- =================================================
              SANTOS CONTEMPORÂNEOS
              ================================================= -->
-
+ 
         <section id="contemporaneos">
-
+ 
             <h2>
                 Santos Contemporâneos
             </h2>
-
+ 
             <div
                 id="lista-contemporaneos"
                 class="lista-santos"
             ></div>
-
+ 
             <button
                 id="ver-mais-contemporaneos"
                 onclick="adicionarMais('contemporaneos')"
             >
                 Ver mais
             </button>
-
+ 
         </section>
-
-
-
+ 
+ 
+ 
         <!-- =================================================
              TÍTULOS MARIANOS
              ================================================= -->
-
+ 
         <section id="titulos-marianos">
-
+ 
             <h2>
                 Títulos Marianos
             </h2>
-
+ 
             <div
                 id="lista-titulos-marianos"
                 class="lista-santos"
             ></div>
-
+ 
             <button
                 id="ver-mais-titulos-marianos"
                 onclick="adicionarMais('titulos-marianos')"
             >
                 Ver mais
             </button>
-
+ 
         </section>
-
-
-
+ 
+ 
+ 
         <!-- =================================================
              CALENDÁRIO LITÚRGICO
              ================================================= -->
-
+ 
         <section id="calendario-liturgico">
-
+ 
             <h2>
                 Calendário Litúrgico
             </h2>
-
+ 
             <p>
                 Confira os principais tempos litúrgicos da Igreja Católica
                 ao longo do ano.
             </p>
-
+ 
+            <div class="tabela-scroll">
             <table>
-
+ 
                 <thead>
                     <tr>
                         <th>Tempo Litúrgico</th>
@@ -199,7 +199,7 @@
                         <th>Cor Litúrgica</th>
                     </tr>
                 </thead>
-
+ 
                 <tbody>
                     <tr>
                         <td>Advento</td>
@@ -227,40 +227,44 @@
                         <td>Verde</td>
                     </tr>
                 </tbody>
-
+ 
             </table>
-
-    
-
+            </div>
+ 
+ 
+ 
         </section>
-
-        <p>Para mais informacoes oficiais, visite o <a href="https://www.vaticannews.va/en.html" target="_blank" rel="noopener noreferrer">site oficial do Vaticano</a>.</p>
-
-
-
+ 
+        <p class="link-vaticano">
+            Para mais informações oficiais, visite o
+            <a href="https://www.vaticannews.va/en.html" target="_blank" rel="noopener noreferrer">site oficial do Vaticano</a>.
+        </p>
+ 
+ 
+ 
         <!-- =================================================
              FORMULÁRIO - SUGERIR UM SANTO
              ================================================= -->
-
+ 
         <section id="sugerir-santo">
-
+ 
             <h2>
                 Sugira um Santo
             </h2>
-
+ 
             <p>
                 Não encontrou o santo que procurava? Envie uma sugestão
                 para que possamos incluí-lo em nosso acervo.
             </p>
-
+ 
             <form id="form-sugestao">
-
+ 
                 <fieldset>
-
+ 
                     <legend>
                         Dados da sugestão
                     </legend>
-
+ 
                     <label for="nome-santo-sugerido">
                         Nome do santo:
                     </label>
@@ -272,7 +276,7 @@
                         title="Digite apenas letras e espaços"
                         required
                     >
-
+ 
                     <label for="email-solicitante">
                         Seu e-mail:
                     </label>
@@ -282,7 +286,7 @@
                         name="email-solicitante"
                         required
                     >
-
+ 
                     <label for="periodo-sugerido">
                         Período histórico:
                     </label>
@@ -297,7 +301,7 @@
                         <option value="modernos">Moderno</option>
                         <option value="contemporaneos">Contemporâneo</option>
                     </select>
-
+ 
                     <label for="data-celebracao-sugerida">
                         Data de celebração (se souber):
                     </label>
@@ -308,7 +312,7 @@
                         min="1900-01-01"
                         max="2026-12-31"
                     >
-
+ 
                     <label for="motivo-sugestao">
                         Por que esse santo deveria ser incluído?
                     </label>
@@ -318,54 +322,55 @@
                         rows="4"
                         required
                     ></textarea>
-
+ 
                 </fieldset>
-
+ 
                 <button type="submit">
                     Enviar sugestão
                 </button>
-
+ 
             </form>
-
+ 
         </section>
-
+ 
     </main>
-
-
-
+ 
+ 
+ 
     <!-- =================================================
          RODAPÉ
          ================================================= -->
-
+ 
     <footer>
-
+ 
         <p>
             &copy; 2026 Catholic Point. Projeto acadêmico.
         </p>
-
+ 
     </footer>
-
-
-
+ 
+ 
+ 
     <!-- =================================================
          JAVASCRIPT
          ================================================= -->
-
+ 
     <!-- PRIMEIRO: banco de dados -->
-
+ 
     <script src="./js/santos.js"></script>
-
+ 
     <script>
         console.log("santos.js carregado");
-
+ 
         console.log("Primeiros séculos:", santosPrimeirosSeculos);
         console.log("Medievais:", santosMedievais);
         console.log("Modernos:", santosModernos);
         console.log("Contemporâneos:", santosContemporaneos);
         console.log("Títulos marianos:", titulosMarianos);
     </script>
-
+ 
     <script src="./js/script.js"></script>
-
+ 
 </body>
 </html>
+ 
