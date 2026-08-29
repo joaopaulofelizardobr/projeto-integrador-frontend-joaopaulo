@@ -58,7 +58,7 @@ main {
     padding: 1.5rem;
 }
  
-/* ===== SEÇÕES DOS SANTOS (separação visual) ===== */
+/* ===== SEÇÕES GERAIS (separação visual) ===== */
 main > section {
     background-color: #ffffff;
     border: 1px solid #e0dcd0;
@@ -81,11 +81,98 @@ main > section h2 {
     margin-bottom: 1.2rem;
 }
  
-/* ===== CONTAINER DE CADA CATEGORIA (onde os cards ficam) ===== */
-main > section > div[id^="lista-"] {
+/* ===== BARRA DE PESQUISA ===== */
+#campo-busca {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 2px solid #c9a227;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    margin-bottom: 1.2rem;
+}
+ 
+#campo-busca:focus {
+    outline: none;
+    border-color: #a8841b;
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.2);
+}
+ 
+#resultado-busca {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
+}
+ 
+/* ===== CALENDÁRIO DE SANTOS ===== */
+.navegacao-mes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+ 
+.navegacao-mes h3 {
+    color: #a8841b;
+    font-size: 1.4rem;
+    min-width: 140px;
+    text-align: center;
+}
+ 
+.navegacao-mes button {
+    background-color: #c9a227;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+ 
+.navegacao-mes button:hover {
+    background-color: #a8841b;
+}
+ 
+.grade-dias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+ 
+.botao-dia {
+    background-color: #faf6ec;
+    border: 1px solid #e0dcd0;
+    border-radius: 6px;
+    padding: 0.6rem 0;
+    font-weight: bold;
+    color: #6b5a2e;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+ 
+.botao-dia:hover {
+    background-color: #f0e6c8;
+}
+ 
+.botao-dia-ativo {
+    background-color: #c9a227;
+    color: #ffffff;
+    border-color: #a8841b;
+}
+ 
+#resultado-calendario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+ 
+.mensagem-vazia {
+    color: #6b5a2e;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 0;
 }
  
 /* ===== CARD DE CADA SANTO ===== */
@@ -119,25 +206,6 @@ main > section > div[id^="lista-"] {
  
 .card-conteudo strong {
     color: #6b5a2e;
-}
- 
-/* ===== BOTÃO "VER MAIS" ===== */
-button[id^="ver-mais-"] {
-    display: block;
-    margin: 1rem auto 0;
-    background-color: #c9a227;
-    color: #ffffff;
-    border: none;
-    padding: 0.7rem 2rem;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
- 
-button[id^="ver-mais-"]:hover {
-    background-color: #a8841b;
 }
  
 /* ===== TABELA (calendário litúrgico) ===== */
@@ -328,6 +396,10 @@ body > a:hover {
         font-size: 1.3rem;
     }
  
+    .grade-dias {
+        grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+    }
+ 
     .card-santo {
         padding: 1rem;
     }
@@ -369,13 +441,17 @@ body > a:hover {
         font-size: 1.15rem;
     }
  
-    .card-santo h3 {
-        font-size: 1.1rem;
+    .navegacao-mes {
+        flex-direction: column;
+        gap: 0.6rem;
     }
  
-    button[id^="ver-mais-"] {
-        width: 100%;
-        padding: 0.6rem;
+    .grade-dias {
+        grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    }
+ 
+    .card-santo h3 {
+        font-size: 1.1rem;
     }
  
     form button,

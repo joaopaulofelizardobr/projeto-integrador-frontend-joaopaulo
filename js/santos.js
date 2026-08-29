@@ -59,6 +59,22 @@ const santosPrimeirosSeculos = [
     },
 
     {
+    nome: "São José",
+    categoria: "primeiros-seculos",
+    periodo: "Primeiro Século",
+    nascimento: "Desconhecido",
+    localNascimento: "Belém ou Nazaré",
+    morte: "Desconhecido",
+    localMorte: "Nazaré",
+    dataCanonizacao: "Culto desde os primeiros séculos",
+    dataCelebracao: "19/03",
+    classificacaoLiturgica: "Solenidade",
+    estadoDeVida: "Esposo de Nossa Senhora, pai adotivo de Jesus",
+    descricao: "Esposo de Maria e pai adotivo de Jesus Cristo, São José é o padroeiro da Igreja Universal e modelo de trabalhador. Conhecido por sua obediência e fé, aceitou o chamado de Deus mesmo diante de circunstâncias incomuns, protegendo e sustentando a Sagrada Família.",
+    imagem: "assets/images/sao-jose.jpg"
+},
+
+    {
         nome: "São João Evangelista",
         categoria: "primeiros-seculos",
         periodo: "primeiros-seculos",
