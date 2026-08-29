@@ -58,131 +58,61 @@
  
     <main>
  
+ 
         <!-- =================================================
-             SANTOS DOS PRIMEIROS SÉCULOS
+             BARRA DE PESQUISA
              ================================================= -->
  
-        <section id="primeiros-seculos">
+        <section id="busca-santos">
  
             <h2>
-                Santos dos Primeiros Séculos
+                Pesquisar Santos
             </h2>
  
-            <div
-                id="lista-primeiros-seculos"
-                class="lista-santos"
-            ></div>
- 
-            <button
-                id="ver-mais-primeiros-seculos"
-                onclick="adicionarMais('primeiros-seculos')"
+            <input
+                type="text"
+                id="campo-busca"
+                placeholder="Digite o nome de um santo..."
             >
-                Ver mais
-            </button>
+ 
+            <div id="resultado-busca"></div>
  
         </section>
  
  
  
         <!-- =================================================
-             SANTOS MEDIEVAIS
+             CALENDÁRIO DE SANTOS
              ================================================= -->
  
-        <section id="medievais">
+        <section id="calendario-santos">
  
             <h2>
-                Santos Medievais
+                Calendário de Santos
             </h2>
  
-            <div
-                id="lista-medievais"
-                class="lista-santos"
-            ></div>
+            <p>
+                Escolha um mês e um dia para ver quais santos
+                são celebrados naquela data.
+            </p>
  
-            <button
-                id="ver-mais-medievais"
-                onclick="adicionarMais('medievais')"
-            >
-                Ver mais
-            </button>
+            <div class="navegacao-mes">
  
-        </section>
+                <button type="button" onclick="mesAnterior()">
+                    &laquo; Anterior
+                </button>
  
+                <h3 id="titulo-mes">Janeiro</h3>
  
+                <button type="button" onclick="proximoMes()">
+                    Próximo &raquo;
+                </button>
  
-        <!-- =================================================
-             SANTOS MODERNOS
-             ================================================= -->
+            </div>
  
-        <section id="modernos">
+            <div id="grade-dias" class="grade-dias"></div>
  
-            <h2>
-                Santos Modernos
-            </h2>
- 
-            <div
-                id="lista-modernos"
-                class="lista-santos"
-            ></div>
- 
-            <button
-                id="ver-mais-modernos"
-                onclick="adicionarMais('modernos')"
-            >
-                Ver mais
-            </button>
- 
-        </section>
- 
- 
- 
-        <!-- =================================================
-             SANTOS CONTEMPORÂNEOS
-             ================================================= -->
- 
-        <section id="contemporaneos">
- 
-            <h2>
-                Santos Contemporâneos
-            </h2>
- 
-            <div
-                id="lista-contemporaneos"
-                class="lista-santos"
-            ></div>
- 
-            <button
-                id="ver-mais-contemporaneos"
-                onclick="adicionarMais('contemporaneos')"
-            >
-                Ver mais
-            </button>
- 
-        </section>
- 
- 
- 
-        <!-- =================================================
-             TÍTULOS MARIANOS
-             ================================================= -->
- 
-        <section id="titulos-marianos">
- 
-            <h2>
-                Títulos Marianos
-            </h2>
- 
-            <div
-                id="lista-titulos-marianos"
-                class="lista-santos"
-            ></div>
- 
-            <button
-                id="ver-mais-titulos-marianos"
-                onclick="adicionarMais('titulos-marianos')"
-            >
-                Ver mais
-            </button>
+            <div id="resultado-calendario"></div>
  
         </section>
  
@@ -369,19 +299,7 @@
          JAVASCRIPT
          ================================================= -->
  
-    <!-- PRIMEIRO: banco de dados -->
- 
     <script src="./js/santos.js"></script>
- 
-    <script>
-        console.log("santos.js carregado");
- 
-        console.log("Primeiros séculos:", santosPrimeirosSeculos);
-        console.log("Medievais:", santosMedievais);
-        console.log("Modernos:", santosModernos);
-        console.log("Contemporâneos:", santosContemporaneos);
-        console.log("Títulos marianos:", titulosMarianos);
-    </script>
  
     <script src="./js/script.js"></script>
  
